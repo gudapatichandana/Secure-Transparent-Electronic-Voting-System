@@ -32,6 +32,18 @@
 
 ---
 
+## 🌐 Live Demo
+
+| Module                  | Link                                                                          |
+| ----------------------- | ----------------------------------------------------------------------------- |
+| 🌐 Main Application     | https://secure-transparent-electronic-voting-system-v483-272jgervo.vercel.app |
+| 🛠 Election Admin Panel | https://secure-transparent-electronic-voting-system-99qu-pnifv8brv.vercel.app |
+| ⚙ System Admin Panel    | https://secure-transparent-electronic-voting-system-lnxh-ddeshrq9i.vercel.app |
+| 👁 Observer Module      | https://secure-transparent-electronic-voting-system-j5i1ofdrx.vercel.app      |
+| 🧾 Voter Registration   | https://secure-transparent-electronic-voting-system-lp3i-rfbe45as8.vercel.app |
+
+---
+
 ## 🌐 Overview
 
 The **Secure & Transparent Electronic Voting System** is a full-stack, multi-application platform that models real-world national elections end-to-end. It is designed around the principles of **vote anonymity**, **result integrity**, and **public auditability** — enforced at the cryptographic and architectural level, not just by policy.
