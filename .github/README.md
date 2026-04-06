@@ -36,7 +36,7 @@
 
 | Module                  | Link                                                                          |
 | ----------------------- | ----------------------------------------------------------------------------- |
-| 🌐 Main Application     | https://secure-transparent-electronic-voting-system-v483-272jgervo.vercel.app |
+| 🌐 Main Application     | https://secure-transparent-electronic-votin-ivory.vercel.app/
 | 🛠 Election Admin Panel | https://secure-transparent-electronic-voting-system-99qu-pnifv8brv.vercel.app |
 | ⚙ System Admin Panel    | https://secure-transparent-electronic-voting-system-lnxh-ddeshrq9i.vercel.app |
 | 👁 Observer Module      | https://secure-transparent-electronic-voting-system-j5i1ofdrx.vercel.app      |
