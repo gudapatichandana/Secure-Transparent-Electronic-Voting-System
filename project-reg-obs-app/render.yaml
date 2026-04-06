@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: reg-obs-app
+    env: static
+    buildCommand: npx expo export --platform web
+    staticPublishPath: ./dist
+    envVars:
+      - key: EXPO_PUBLIC_API_URL
+        value: https://secure-transparent-electronic-voting.onrender.com

@@ -1,0 +1,34 @@
+{
+  "name": "secure-transparent-electronic-voting-system",
+  "version": "1.0.0",
+  "description": "A **secure, web-based electronic voting platform** designed to ensure fair elections through cryptographic security, robust access control, and complete auditability. The system models real-world election workflows, enabling **Voters**, **Election Officials**, and **Auditors** to participate in a transparent process while guaranteeing **vote anonymity** and **result integrity**.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "reg-obs": "cd ../project-reg-obs-app && npm run web",
+    "backend": "cd ../backend-api && npm run dev",
+    "admin": "cd ../project-election-admin && npm run dev",
+    "voter": "cd ../project-voter && npm run dev",
+    "observer": "cd ../project-observer && npm run dev",
+    "sysadmin": "cd ../project-sys-admin && npm run dev",
+    "registration": "cd ../project-voter-registration && npm run dev",
+    "install:all": "npm install && cd ../backend-api && npm install && cd ../project-election-admin && npm install --legacy-peer-deps && cd ../project-voter && npm install --legacy-peer-deps && cd ../project-observer && npm install --legacy-peer-deps && cd ../project-sys-admin && npm install --legacy-peer-deps && cd ../project-voter-registration && npm install --legacy-peer-deps && cd ../project-reg-obs-app && npm install",
+    "dev:admin": "npx concurrently \"npm run backend\" \"npm run admin\"",
+    "dev:all": "npx concurrently \"npm run backend\" \"npm run admin\" \"npm run voter\" \"npm run observer\" \"npm run sysadmin\" \"npm run registration\" \"npm run reg-obs\"",
+    "build:all": "cd ../project-election-admin && npm run build && cd ../project-voter && npm run build && cd ../project-observer && npm run build && cd ../project-sys-admin && npm run build && cd ../project-voter-registration && npm run build",
+    "test:ui": "npx vitest --ui",
+    "test:all": "npx vitest run"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@happy-dom/global-registrator": "^20.8.3",
+    "@vitest/ui": "^4.0.18",
+    "concurrently": "^9.2.1",
+    "happy-dom": "^20.8.3",
+    "jsdom": "^28.1.0",
+    "vitest": "^4.0.18"
+  }
+}

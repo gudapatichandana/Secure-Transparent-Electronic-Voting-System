@@ -1,0 +1,62 @@
+{
+    "header": {
+        "title": "TrustBallot",
+        "dashboard": "Dashboard",
+        "analytics": "Analytics",
+        "reports": "Reports",
+        "help": "Help",
+        "logout": "Logout",
+        "observer": "Observer"
+    },
+    "hero": {
+        "title": "TrustBallot Observer Portal",
+        "subtitle": "Authorized ECI Oversight Console. Monitor real-time voting analytics, verify blockchain ledger integrity, and submit statutory election reports securely.",
+        "system_status": "System Status",
+        "online": "Online, Secure",
+        "activity": "Voting Activity",
+        "trend": "Trend"
+    },
+    "actions": {
+        "title": "Quick Actions",
+        "realtime_title": "Real-Time Turnout",
+        "realtime_desc": "Track live voting percentages and arrival trends across all polling stations.",
+        "access_analytics": "Access Analytics",
+        "ledger_title": "Block Ledger",
+        "ledger_desc": "Audit the immutable blockchain ledger and verify transaction integrity.",
+        "view_ledger": "View Ledger",
+        "reports_title": "Statutory Reports",
+        "reports_desc": "File mandatory Arrival, Poll-Day, and Post-Poll reports to ECI.",
+        "open_module": "Open Module",
+        "emergency_title": "Emergency",
+        "emergency_desc": "Report critical malpractice or initiate suspension protocols immediately.",
+        "initiate_protocol": "Initiate Protocol"
+    },
+    "login": {
+        "title": "TrustBallot Observer",
+        "subtitle": "Ensure the integrity of the democratic process.",
+        "secure_access": "Secure Access",
+        "encrypted": "256-bit Encrypted",
+        "welcome": "Welcome Back!",
+        "identify": "Please identify yourself to proceed.",
+        "general_obs": "General Observer",
+        "expenditure_obs": "Expenditure Observer",
+        "username": "Username",
+        "password": "Password",
+        "access_portal": "Access Portal",
+        "verifying": "Verifying Credentials...",
+        "registration_success": "Registration successful! Please login with your new account.",
+        "unauthorized": "Unauthorized access is a punishable offense under the Representation of the People Act, 1951.",
+        "register_prompt": "Don't have an account?",
+        "register_link": "Register New Account"
+    },
+    "register": {
+        "title": "Observer Registration",
+        "subtitle": "Secure portal for General and Expenditure Observers appointed by the Election Commission of India.",
+        "legal_disclaimer": "Authorized access only. Registration constitutes acceptance of ECI confidentiality duties under the Representation of the People Act, 1951.",
+        "full_name": "Official Name (as in Order)",
+        "confirm_password": "Confirm Password",
+        "submit": "Proceed to Dashboard",
+        "login_prompt": "Already registered?",
+        "login_link": "Login here"
+    }
+}

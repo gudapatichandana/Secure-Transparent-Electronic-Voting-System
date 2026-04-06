@@ -1,0 +1,392 @@
+:root {
+  --primary-color: #192742;
+  /* Navy */
+  --accent-color: #F7941D;
+  /* Saffron */
+  --green-color: #138808;
+  /* Green */
+  --blue-color: #00bfff;
+  /* Light Blue Accent */
+  --bg-color: #f8f9fa;
+  --text-main: #212529;
+  --text-light: #6c757d;
+}
+
+body {
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+  background-color: #FDFDFD;
+  color: var(--text-main);
+  margin: 0;
+  padding: 0;
+}
+
+/* --- Header --- */
+.m5-header {
+  background: white;
+  padding: 1rem 5%;
+  /* Responsive horizontal padding */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-top: 5px solid var(--accent-color);
+  /* Saffron Top Border */
+}
+
+.m5-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-weight: 800;
+  font-size: 1.4rem;
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.m5-nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.m5-nav-item {
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--text-light);
+  transition: all 0.2s;
+}
+
+.m5-nav-item.active {
+  background: #E8F5E9;
+  /* Light Green background */
+  color: var(--green-color);
+}
+
+.m5-nav-item:hover:not(.active) {
+  background: #f1f3f5;
+  color: var(--primary-color);
+}
+
+.m5-user-actions {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-light);
+}
+
+.m5-logout-btn {
+  background: #ffebee;
+  color: #c62828;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: background 0.2s;
+}
+
+.m5-logout-btn:hover {
+  background: #ffcdd2;
+}
+
+/* --- Main Layout --- */
+.m5-container {
+  max-width: 1400px;
+  width: 92%;
+  margin: 2rem auto;
+}
+
+/* --- Hero Section --- */
+.m5-hero {
+  /* Tricolor Gradient: Saffron -> White -> Green (subtle) or just Saffron/Navy/Green mix */
+  /* User wants all colors. Let's make Hero Saffron-Orange as a header authority color, or a gradient */
+  background: linear-gradient(135deg, var(--accent-color) 0%, #e68a1b 100%);
+  border-radius: 24px;
+  padding: 4rem;
+  position: relative;
+  overflow: hidden;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 280px;
+  box-shadow: 0 20px 40px rgba(247, 148, 29, 0.25);
+}
+
+.m5-hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 650px;
+}
+
+.m5-hero h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin: 0 0 1rem 0;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.m5-hero p {
+  font-size: 1.1rem;
+  opacity: 0.95;
+  line-height: 1.6;
+  margin-bottom: 2.5rem;
+  font-weight: 500;
+}
+
+.m5-widgets {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.m5-glass-widget {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  display: flex;
+  flex-direction: column;
+  min-width: 160px;
+  color: white;
+}
+
+.m5-hero-bg-icon {
+  position: absolute;
+  right: 5%;
+  bottom: -10%;
+  font-size: 18rem;
+  opacity: 0.15;
+  transform: rotate(-10deg);
+  pointer-events: none;
+  filter: grayscale(1) brightness(2);
+}
+
+/* --- Quick Actions --- */
+.m5-section-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin: 3rem 0 1.5rem 0;
+  padding-left: 0.5rem;
+  border-left: 5px solid var(--green-color);
+  /* Green Accent Title */
+  line-height: 1.2;
+}
+
+.m5-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.m5-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 20px;
+  border: 1px solid #f0f0f0;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.m5-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+}
+
+.m5-icon-box {
+  width: 50px;
+  height: 50px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.m5-card h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 0 0 0.5rem 0;
+  color: var(--primary-color);
+}
+
+.m5-card p {
+  font-size: 0.95rem;
+  color: var(--text-light);
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+.m5-access-link {
+  font-weight: 600;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Chat Bubble */
+.m5-chat-bubble {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 60px;
+  height: 60px;
+  background: var(--primary-color);
+  /* Navy Blue Bubble */
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  box-shadow: 0 10px 25px rgba(25, 39, 66, 0.4);
+  cursor: pointer;
+  transition: transform 0.2s;
+  z-index: 1000;
+}
+
+.m5-chat-bubble:hover {
+  transform: scale(1.1);
+}
+
+/* --- Restored Login Styles with Tricolor Updates --- */
+.login-wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Light Blue background, slightly richer */
+  background: linear-gradient(135deg, #e3f2fd 0%, #f1f8e9 100%);
+  padding: 2rem;
+}
+
+.login-card {
+  display: flex;
+  background: white;
+  border-radius: 24px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  max-width: 1000px;
+  width: 100%;
+  min-height: 600px;
+  border: 1px solid white;
+}
+
+.login-visual {
+  flex: 1;
+  background: var(--primary-color);
+  /* Navy Blue Base */
+  color: white;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.login-visual::after {
+  content: '';
+  position: absolute;
+  top: -20%;
+  right: -20%;
+  width: 300px;
+  height: 300px;
+  background: var(--accent-color);
+  /* Saffron Orb */
+  opacity: 0.3;
+  border-radius: 50%;
+  filter: blur(60px);
+}
+
+.login-visual::before {
+  content: '';
+  position: absolute;
+  bottom: -10%;
+  left: -10%;
+  width: 250px;
+  height: 250px;
+  background: var(--green-color);
+  /* Green Orb */
+  opacity: 0.2;
+  border-radius: 50%;
+  filter: blur(50px);
+}
+
+.login-form-section {
+  flex: 1;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.role-toggle {
+  display: flex;
+  background: #f1f8e9;
+  /* Light Green Tint */
+  padding: 6px;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  width: fit-content;
+  border: 1px solid #c8e6c9;
+}
+
+.role-btn {
+  padding: 0.6rem 1.5rem;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  border-radius: 10px;
+  font-weight: 600;
+  color: var(--text-light);
+  transition: all 0.3s ease;
+}
+
+.role-btn.active {
+  background: var(--accent-color);
+  /* Saffron Active Button */
+  color: white;
+  box-shadow: 0 4px 10px rgba(247, 148, 29, 0.3);
+}
+
+.input-group {
+  margin-bottom: 1.5rem;
+}
+
+.input-field {
+  width: 100%;
+  padding: 1rem 1.25rem;
+  border: 2px solid #f1f3f5;
+  border-radius: 12px;
+  background: #f8f9fa;
+  font-size: 1rem;
+  transition: all 0.2s;
+  box-sizing: border-box;
+}
+
+.input-field:focus {
+  background: white;
+  border-color: var(--green-color);
+  /* Green Focus */
+  box-shadow: 0 0 0 4px rgba(19, 136, 8, 0.1);
+  outline: none;
+}

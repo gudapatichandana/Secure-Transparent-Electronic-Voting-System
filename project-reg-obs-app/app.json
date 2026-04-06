@@ -1,0 +1,46 @@
+{
+  "expo": {
+    "name": "project-reg-obs-app",
+    "slug": "project-reg-obs-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "edgeToEdgeEnabled": true,
+      "package": "com.sandeep_sandy123.projectregobsapp"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "output": "single",
+      "bundler": "metro"
+    },
+    "plugins": [
+      "@react-native-community/datetimepicker"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "726dd7ab-03de-4385-b326-17c0479103c1"
+      }
+    },
+    "updates": {
+      "url": "https://u.expo.dev/726dd7ab-03de-4385-b326-17c0479103c1"
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    }
+  }
+}
+
